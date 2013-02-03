@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+	h2 Новости
+	each i in news
+		div.news_item
+			h2= i.title
+			p
+				!= i.body

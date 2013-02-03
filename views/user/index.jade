@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+	h2 Привет #{session.name}
+	b Что будем делать?
+	br
+	br
+	br
+	a(href='/user/'+session.login+'/news') Новости
+	|&nbsp;|&nbsp;
+	a(href='/user/'+session.login+'/message') Сообщения
+	|&nbsp;|&nbsp;
+	a(href='/user/'+session.login+'/blocks') Блоки
+	|&nbsp;|&nbsp;
+	a(href='/user/'+session.login+'/library') Библиотека

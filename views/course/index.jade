@@ -1,0 +1,23 @@
+extends ../layout
+//- - var exercises = doc.exercises
+
+block content
+	h2 Курс
+	b= doc.title
+	p= doc.body
+	- if (doc.exercises.length > 0)
+		a.task(href='#') Задания
+		div.exercises
+			each exercise in doc.exercises
+				br
+				a.answer(href='#')= exercise.title
+				div.exercise
+					p= exercise.body
+					br
+					|Ответ:
+					br
+					form(action="", method="post", enctype="multipart/form-data")
+						textarea(name="answer", cols="40", rows="3")
+						br
+						br
+						input(type="submit", value="Ответ")
