@@ -1,0 +1,23 @@
+{
+  "name": "cie_methods",
+  "version": "0.0.0",
+  "description": "cie_methods ===========",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~3.1.0",
+    "mongoose": "~3.5.5",
+    "jade": "~0.28.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ponyspy/cie_methods.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "e7dc29df65f7db88c7ad88da8626f26ab134b7ba"
+}
